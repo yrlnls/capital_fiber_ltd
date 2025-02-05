@@ -1,16 +1,17 @@
+body {
+  color: black; /* Set default text color to black */
+}
+
+/* Existing styles */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color:  #f8f9fa; /* Light background */
+  background-color: #f8f9fa; /* Light background */
 }
 
-header {
-  background-color: #007bff; /* Primary color */
-  color: white;
-  padding: 1rem;
-}
+
 
 h1 {
   margin: 0;
@@ -35,8 +36,31 @@ ul {
 li {
   margin: 0.5rem 0;
 }
+ 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffdb58; /* Light background */
+  padding: 1rem;
+}
 
 .logo {
   height: 6em; /* Adjust height as needed */
-  padding: 1.5em; /* Adjust padding as needed */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem; /* Space between nav items */
+}
+
+nav a {
+  text-decoration: none;
+  color: white; /* Change to white for visibility */
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #007bff; /* Change color on hover */
 }
