@@ -1,0 +1,33 @@
+#services {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #f8f9fa; /* Light background for cards */
+  border: 1px solid #dee2e6; /* Light border */
+  border-radius: 5px;
+  padding: 1rem;
+  width: 30%; /* Adjust width as needed */
+  margin: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  color: #007bff; /* Primary color */
+}
+
+.service-card p {
+  color: #333; /* Dark text */
+}
+
+.icon-fibre-internet, .icon-cctv, .icon-electric-fencing {
+  font-size: 2em; /* Adjust icon size */
+  margin-bottom: 0.5rem;
+}
