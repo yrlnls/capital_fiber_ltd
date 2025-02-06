@@ -1,0 +1,32 @@
+#packages {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.package-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.package-card {
+  background-color: #ffdb58; /* Yellow background for package cards */
+  border: 1px solid #003366; /* Dark blue border */
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 30%; /* Adjust width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.package-card i {
+  font-size: 2rem; /* Increase icon size */
+}
+
+.package-card h3 {
+  color: #003366; /* Dark blue for headings */
+}
+
+.package-card p {
+  color: #333; /* Dark text for descriptions */
+}

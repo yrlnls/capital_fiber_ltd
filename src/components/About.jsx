@@ -1,4 +1,5 @@
 import React from 'react';
+import 'font-awesome/css/font-awesome.min.css'; // Import Font Awesome
 
 function About() {
   return (
@@ -7,17 +8,17 @@ function About() {
       <p>We provide high-quality fiber internet, CCTV installations, and electric fencing solutions to ensure your home and business are secure and connected.</p>
       <div className="about-icons">
         <div className="about-icon">
-          <i className="icon-fibre-internet"></i>
+          <i className="fa fa-star"></i> {/* Changed icon class for testing */}
           <h3>Fibre Internet</h3>
           <p>Fast and reliable internet services tailored to your needs.</p>
         </div>
         <div className="about-icon">
-          <i className="icon-cctv"></i>
+          <i className="fa fa-camera"></i> {/* Updated icon class */}
           <h3>CCTV Installations</h3>
           <p>Advanced security systems to protect your property.</p>
         </div>
         <div className="about-icon">
-          <i className="icon-electric-fencing"></i>
+          <i className="fa fa-shield"></i> {/* Updated icon class */}
           <h3>Electric Fencing</h3>
           <p>Reliable solutions for securing your premises.</p>
         </div>

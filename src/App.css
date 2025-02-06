@@ -1,17 +1,15 @@
 body {
-  color: black; /* Set default text color to black */
+  color: white; /* Change text color to white for better visibility */
 }
 
-/* Existing styles */
+/* Updated styles */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #f8f9fa; /* Light background */
+  background-color: #003366; /* Dark blue background */
 }
-
-
 
 h1 {
   margin: 0;
@@ -25,7 +23,7 @@ section {
 }
 
 h2 {
-  color: #007bff; /* Primary color */
+  color: #ffdb58; /* Yellow color for headings */
 }
 
 ul {
@@ -36,12 +34,12 @@ ul {
 li {
   margin: 0.5rem 0;
 }
- 
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffdb58; /* Light background */
+  background-color: #ffdb58; /* Light yellow background */
   padding: 1rem;
 }
 
@@ -57,10 +55,10 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: white; /* Change to white for visibility */
+  color: #003366; /* Dark blue for visibility */
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #007bff; /* Change color on hover */
+  color: #ffdb58; /* Change color on hover */
 }

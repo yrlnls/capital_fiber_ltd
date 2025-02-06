@@ -1,0 +1,32 @@
+#security {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.security-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.security-card {
+  background-color: #ffdb58; /* Yellow background for security cards */
+  border: 1px solid #003366; /* Dark blue border */
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 30%; /* Adjust width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.security-card i {
+  font-size: 2rem; /* Increase icon size */
+}
+
+.security-card h4 {
+  color: #003366; /* Dark blue for headings */
+}
+
+.security-card p {
+  color: #333; /* Dark text for descriptions */
+}
