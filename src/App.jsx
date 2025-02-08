@@ -5,7 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Packages from './components/Packages';
 import Security from './components/Security';
-import Contact from './components/Contact';
+import Footer from './components/Footer'; 
 
 function App() {
   return (
@@ -16,10 +16,10 @@ function App() {
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#packages">Packages</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+            <li><a href="#about">About Us</a></li>
           </ul>
         </nav>
       </header>
@@ -27,8 +27,8 @@ function App() {
       <Services />
       <Packages />
       <Security />
-      <Contact />
       <About />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,17 @@
+footer {
+  background-color: #003366; /* Dark background */
+  color: white; /* White text color */
+  padding: 20px; /* Padding around the footer */
+  text-align: center; /* Centered text */
+}
+
+footer p {
+  margin: 5px 0; /* Margin for paragraphs */
+  font-size: 18px; /* Increased font size */
+}
+
+footer .icon {
+  margin-right: 8px; /* Space between icon and text */
+  vertical-align: middle; /* Align icon with text */
+  font-size: 20px; /* Icon size */
+}

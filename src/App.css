@@ -15,6 +15,16 @@ h1 {
   margin: 0;
 }
 
+header p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 1rem 0;
+  color: white;
+}
+p {
+  color: white; /* Change text color to white for better visibility */
+  font-size: large;
+}
 section {
   margin: 2rem 0;
   padding: 1rem;
@@ -60,5 +70,10 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffdb58; /* Change color on hover */
+  color: red; /* Change color on hover */
 }
+
+body {
+  color: white; /* Change text color to white for better visibility */
+}
+
