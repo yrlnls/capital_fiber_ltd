@@ -1,32 +1,41 @@
 #security {
   text-align: center;
   margin: 2rem 0;
+  display: block;
 }
 
 .security-cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .security-card {
-  background-color: #ffdb58; /* Yellow background for security cards */
-  border: 1px solid #003366; /* Dark blue border */
+  background-color: #ffdb58; 
+  border: 1px solid #003366; 
   border-radius: 5px;
   padding: 1rem;
-  margin: 1rem;
-  width: 30%; /* Adjust width as needed */
+  margin: 0;
+  width: calc(33.33% - 2rem); 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.security-card:hover {
+  transform: scale(1.05);
 }
 
 .security-card i {
-  font-size: 2rem; /* Increase icon size */
+  font-size: 2rem; 
 }
 
 .security-card h4 {
-  color: #003366; /* Dark blue for headings */
+  color: #003366; 
+  margin-bottom: 0.5rem;
 }
 
 .security-card p {
-  color: #333; /* Dark text for descriptions */
+  color: #333; 
+  margin-bottom: 1rem;
 }

@@ -1,17 +1,24 @@
 footer {
   background-color: #003366; /* Dark background */
-  color: white; /* White text color */
-  padding: 20px; /* Padding around the footer */
+  color: #FFFFFF; /* White text color */
+  padding: 2rem; /* Padding around the footer */
   text-align: center; /* Centered text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 footer p {
-  margin: 5px 0; /* Margin for paragraphs */
-  font-size: 18px; /* Increased font size */
+  margin: 0.5rem 0; /* Margin for paragraphs */
+  font-size: 1.125rem; /* Increased font size */
+  font-weight: 400;
+  line-height: 1.5; /* Improve readability */
 }
 
 footer .icon {
-  margin-right: 8px; /* Space between icon and text */
+  margin-right: 0.5rem; /* Space between icon and text */
   vertical-align: middle; /* Align icon with text */
-  font-size: 20px; /* Icon size */
+  font-size: 1.25rem; /* Icon size */
+  transition: color 0.2s ease; /* Add a smooth transition effect */
 }
