@@ -1,5 +1,6 @@
 import React from 'react';
-import 'font-awesome/css/font-awesome.min.css'; // Import Font Awesome
+import 'font-awesome/css/font-awesome.min.css'; 
+import '../App.css';
 
 function About() {
   const services = [
@@ -24,9 +25,9 @@ function About() {
     <section id="about">
       <h2>About Us</h2>
       <p>We provide high-quality fiber internet, CCTV installations, and electric fencing solutions to ensure your home and business are secure and connected.</p>
-      <div className="about-icons">
+      <div className="service-cards">
         {services.map((service, index) => (
-          <div key={index} className="about-icon">
+          <div key={index} className="service-card">
             <i className={service.icon} />
             <h3>{service.title}</h3>
             <p>{service.description}</p>
