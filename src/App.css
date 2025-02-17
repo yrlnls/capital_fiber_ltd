@@ -64,7 +64,7 @@ nav ul {
 }
 
 nav ul li {
-  cursor: pointer; /* Add cursor pointer for the icon */
+  cursor: pointer; 
 }
 
 nav a {
