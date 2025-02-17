@@ -169,6 +169,10 @@ section {
   
   .dropdown {
     padding-top: 60px;
+    width: 100%;
+    left: 0;
+    transform: none;
+    animation: none;
   }
   
   .dropdown-logo {
@@ -203,6 +207,10 @@ section {
 }
 
 @media (max-width: 480px) {
+  .dropdown {
+    padding-top: 40px;
+  }
+  
   .dropdown-logo img {
     width: 80px;
   }
@@ -229,14 +237,6 @@ section {
   }
   100% {
     transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
   }
   100% {
     opacity: 1;
@@ -244,14 +244,13 @@ section {
   }
 }
 
-/* Rest of the CSS remains unchanged */
 
 /* Benefits Section */
 .benefits-section {
   padding: 60px 20px;
   background-color: var(--light-gray);
   text-align: center;
-}
+} 
 
 .benefits-grid {
   display: grid;
@@ -524,6 +523,12 @@ section {
   nav ul {
     gap: 1rem;
   }
+}
+.dropdown {
+  width: 100%;
+  left: 0;
+  transform: none;
+  animation: none;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -1002,17 +1007,18 @@ footer .icon {
   }
 }
 
+
 .dropdown {
   position: absolute;
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   display: flex;
-  flex-direction: column; /* Make the dropdown vertical */
-  animation: slideInFromLeft 0.3s ease-out; /* Add animation */
+  flex-direction: column; 
+  animation: slideInFromLeft 0.3s ease-out; 
   height: 100vh;
-  width: 250px; /* Increase the width */
-}
+  width: 250px; 
+} 
 
 .dropdown li {
   padding: 12px 20px; /* Increase the padding */
