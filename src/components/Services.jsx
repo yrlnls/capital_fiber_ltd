@@ -1,5 +1,5 @@
 import React from 'react';
-import './Services.css';
+import '../App.css';
 import 'font-awesome/css/font-awesome.min.css';
 
 const services = [

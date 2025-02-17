@@ -1,5 +1,5 @@
 import React from 'react';
-import './Packages.css'; 
+import '../App.css';
 import 'font-awesome/css/font-awesome.min.css'; 
 
 function Packages() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Security.css'; 
+import '../App.css';
 import 'font-awesome/css/font-awesome.min.css'; 
 
 const securityCards = [
