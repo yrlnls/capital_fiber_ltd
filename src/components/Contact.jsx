@@ -13,21 +13,9 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-info">
             <div className="info-card">
-              <h3>General Inquiries</h3>
-              <p>Email: info@capitalfiber.com</p>
-              <p>Phone: +1 (800) 555-1234</p>
-            </div>
-
-            <div className="info-card">
-              <h3>Sales Department</h3>
-              <p>Email: sales@capitalfiber.com</p>
-              <p>Phone: +1 (800) 555-5678</p>
-            </div>
-
-            <div className="info-card">
-              <h3>Technical Support</h3>
-              <p>Email: support@capitalfiber.com</p>
-              <p>Phone: +1 (800) 555-9876</p>
+              <h3>General Inquiries/ Technical Support</h3>
+              <p>Email: netsmartsolutions@gmail.com</p>
+              <p>Phone: +254714001616/0112274074</p>
             </div>
           </div>
 
