@@ -63,6 +63,10 @@ nav ul {
   gap: 2rem; 
 }
 
+nav ul li {
+  cursor: pointer; /* Add cursor pointer for the icon */
+}
+
 nav a {
   text-decoration: none;
   color: #003366; 
@@ -291,4 +295,106 @@ footer .icon {
 .about-icon p {
   color: #333;
   font-size: 1rem;
+}
+
+.nav-toggle {
+  background-color: #003366; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  font-size: 16px; 
+  border-radius: 5px; 
+}
+
+.nav-toggle:hover {
+  background-color: #00509e; 
+}
+
+.nav {
+  display: none; 
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ffdb58; 
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 20px;
+  color: #003366; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  background-color: #00509e; 
+  color: white; 
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: flex;
+  flex-direction: column; /* Make the dropdown vertical */
+  animation: slideInFromLeft 0.3s ease-out; /* Add animation */
+  height: 100vh;
+  width: 250px; /* Increase the width */
+}
+
+.dropdown li {
+  padding: 12px 20px; /* Increase the padding */
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown li:hover {
+  background-color: #ddd;
+}
+
+.dropdown button {
+  background-color: #ffdb58;
+  border: none;
+  padding: 12px 20px; /* Increase the padding */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown button:hover {
+  background-color: #e0c04d;
+}
+
+.close-button {
+  align-self: flex-end; /* Move the close button to the right */
+  padding: 0; /* Remove padding */
+}
+
+.dropdown-logo img {
+  width: 100px; /* Adjust the logo size */
+  margin: 10px auto; /* Center the logo */
 }
