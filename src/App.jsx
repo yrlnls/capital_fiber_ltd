@@ -8,6 +8,7 @@ import Packages from './components/Packages';
 import Security from './components/Security';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Contact from './components/Contact';
 
 function App() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -27,7 +28,7 @@ function App() {
             <Route path="/packages" element={<Packages />} />
             <Route path="/security" element={<Security />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Footer />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
