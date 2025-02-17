@@ -79,12 +79,12 @@ function Packages() {
                   display: 'block'
                 }} />
                 <h3 style={{ color: '#003366', marginBottom: '10px' }}>{packageItem.speed}</h3>
-                <p style={{ fontWeight: 'bold', marginBottom: '15px' }}>{packageItem.price}</p>
+                <p style={{ fontWeight: 'bold', marginBottom: '15px', color: '#003366' }}>{packageItem.price}</p>
                 <ul style={{ listStyle: 'none', padding: 0, marginBottom: '20px' }}>
                   {packageItem.features.map((feature, index) => (
                     <li key={index} style={{ marginBottom: '10px' }}>
                       <i className="fa fa-check" style={{ color: '#ff6b35', marginRight: '10px' }}></i>
-                      {feature}
+                      <span style={{ color: '#003366' }}>{feature}</span>
                     </li>
                   ))}
                 </ul>

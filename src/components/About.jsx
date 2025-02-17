@@ -35,22 +35,17 @@ function About() {
           </div>
           <div>
             <h3 style={{ color: '#003366', marginBottom: '20px' }}>Our Story</h3>
-            <p style={{ lineHeight: '1.8', marginBottom: '20px' }}>
+            <p style={{ lineHeight: '1.8', marginBottom: '20px', color: '#003366' }}>
               Since 2010, Capital Fiber Solutions has been at the forefront of providing cutting-edge internet and security solutions. 
               Our mission is to empower homes and businesses with reliable connectivity and state-of-the-art security systems.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', marginTop: '30px' }}>
               <div style={{ textAlign: 'center' }}>
                 <h3 style={{ color: '#ff6b35', fontSize: '2rem', margin: '0' }}>10,000+</h3>
-                <p>Happy Customers</p>
-              </div>
-              <div style={{ textAlign: 'center' }}>
-                <h3 style={{ color: '#ff6b35', fontSize: '2rem', margin: '0' }}>15+</h3>
-                <p>Years of Experience</p>
-              </div>
-              <div style={{ textAlign: 'center' }}>
-                <h3 style={{ color: '#ff6b35', fontSize: '2rem', margin: '0' }}>24/7</h3>
-                <p>Support Available</p>
+              <p style={{ color: '#003366' }}>Happy Customers</p>
+              <p style={{ color: '#003366' }}>Years of Experience</p>
+              <p style={{ color: '#003366' }}>Support Available</p>
+
               </div>
             </div>
           </div>

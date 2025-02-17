@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -35,13 +35,17 @@ const Header = () => {
     <header>
       <nav>
         <ul>
-          <li onClick={toggleDropdown}>
+          <li className="mobile-menu-icon" onClick={toggleDropdown}>
             <FontAwesomeIcon icon={faBars} size="lg" />
           </li>
           {dropdownVisible && (
             <ul className="dropdown" ref={dropdownRef}>
-              <li className="close-button"><button onClick={closeDropdown}>x</button></li>
-              <li className="dropdown-logo"><img src="/CapitalLogo1.jpeg" alt="Capital Logo" /></li>
+              <li className="close-button" onClick={closeDropdown}>
+                <FontAwesomeIcon icon={faTimes} size="lg" />
+              </li>
+              <li className="dropdown-logo">
+                <img src="/CapitalLogo1.jpeg" alt="Capital Logo" />
+              </li>
               <li><a href="/">Home</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/packages">Packages</a></li>

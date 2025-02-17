@@ -42,7 +42,7 @@ function Home() {
       </div>
 
       <div className="main-content">
-        <div className="testimonials-section">
+        {/* <div className="testimonials-section">
           <h2>What Our Customers Say</h2>
           <div className="testimonials-grid">
             <div className="testimonial-card">
@@ -67,7 +67,7 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="stats-section">
           <div className="stats-grid">
