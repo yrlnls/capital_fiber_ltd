@@ -4,20 +4,20 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #003366; /* Dark blue background for the entire app */
+  color: var(--dark-blue);
+  background-color: var(--white);
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #003366; /* Dark blue background */
-  color: white; /* White text for better visibility */
+  background-color: var(--white);
+  color: var(--dark-blue);
 }
 
 footer {
   margin: 0;
   padding: 0;
-  background-color: #003366; /* Dark blue background */
-  color: white; /* White text for better visibility */
+  background-color: var(--primary-blue);
+  color: var(--white);
 }

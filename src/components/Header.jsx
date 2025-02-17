@@ -5,6 +5,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const dropdownRef = useRef(null);
+  const phoneNumbers = ['+254 714 001 616', '+254 112 274 074'];
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
@@ -33,6 +34,17 @@ const Header = () => {
 
   return (
     <header>
+      <div className="header-content">
+        <img src="/CapitalLogo1.jpeg" alt="Company Logo" className="company-logo" />
+        <h1 className="company-name">Capital Fiber Limited</h1>
+        <div className="contact-info">
+          {phoneNumbers.map((number, index) => (
+            <a key={index} href={`tel:${number}`} className="phone-number">
+              {number}
+            </a>
+          ))}
+        </div>
+      </div>
       <nav>
         <ul>
           <li className="mobile-menu-icon" onClick={toggleDropdown}>

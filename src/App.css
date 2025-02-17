@@ -14,7 +14,7 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  color: var(--primary-blue);
+  color: var(--dark-blue);
   background-color: var(--white);
 }
 
@@ -642,7 +642,7 @@ header p {
   color: white;
 }
 p {
-  color: white; 
+  color: var(--dark-blue);
   font-size: large;
 }
 section {
@@ -669,12 +669,43 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffdb58; 
-  padding: 1rem;
+  background-color: #ffdb58;
+  padding: 1.5rem 2rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.company-logo {
+  height: 60px;
+  width: auto;
+}
+
+.company-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-blue);
+}
+
+.contact-info {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.phone-number {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary-blue);
+  white-space: nowrap;
 }
 
 .logo {
-  height: 6em; 
+  height: 6em;
+  margin-right: 2rem;
 }
 
 nav ul {
@@ -778,7 +809,7 @@ nav a:hover {
 }
 
 .service-card p {
-  color: #333;
+  color: var(--dark-blue);
   font-size: 1rem;
 }
 
@@ -820,7 +851,7 @@ nav a:hover {
 }
 
 .security-card p {
-  color: #333; 
+  color: var(--dark-blue);
   margin-bottom: 1rem;
 }
 
@@ -862,7 +893,7 @@ nav a:hover {
 }
 
 .package-card p {
-  color: #333; 
+  color: var(--dark-blue);
   margin-bottom: 1rem;
 }
 
@@ -948,7 +979,7 @@ footer .icon {
 }
 
 .about-icon p {
-  color: #333;
+  color: var(--dark-blue);
   font-size: 1rem;
 }
 
