@@ -40,6 +40,89 @@ header {
   font-weight: 500;
 }
 
+/* Updated Dropdown Menu Styles */
+.dropdown {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .dropdown {
+    width: 400px;
+  }
+}
+
+.dropdown.visible {
+  left: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #003366;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.dropdown-logo {
+  padding: 2rem;
+  text-align: center;
+}
+
+.dropdown-logo img {
+  height: 60px;
+  width: auto;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown a {
+  display: block;
+  padding: 1rem 2rem;
+  color: #003366;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.dropdown a:hover {
+  background-color: #f8f9fa;
+  color: #ff6b35;
+  padding-left: 2.5rem;
+}
+
+.mobile-menu-icon {
+  display: block;
+  cursor: pointer;
+  padding: 1rem;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
+  color: #003366;
+}
+
 /* Hero Section */
 .hero-section {
   position: relative;
@@ -144,7 +227,7 @@ header {
   text-align: center;
 }
 
-.stat-card h3 {
+.stat_card h3 {
   font-size: 2.5rem;
   color: #ff6b35;
   margin-bottom: 0.5rem;
@@ -163,7 +246,7 @@ header {
 
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid_template-columns: 1fr 2fr;
   gap: 2rem;
   margin-top: 2rem;
 }
