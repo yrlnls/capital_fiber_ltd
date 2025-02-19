@@ -44,14 +44,21 @@ header {
 .dropdown {
   position: fixed;
   top: 0;
-  left: -400px; /* Changed from right: -300px */
-  width: 300px;
+  left: -100%;
+  width: 100%;
+  max-width: 400px;
   height: 100vh;
   background: white;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Changed shadow direction */
-  transition: left 0.3s ease; /* Changed from right to left */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
   z-index: 1000;
   overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .dropdown {
+    width: 400px;
+  }
 }
 
 .dropdown.visible {
@@ -106,31 +113,14 @@ header {
 }
 
 .mobile-menu-icon {
-  display: none;
+  display: block;
   cursor: pointer;
   padding: 1rem;
-}
-
-@media (max-width: 768px) {
-  .mobile-menu-icon {
-    display: block;
-    position: fixed;
-    top: 1rem;
-    left: 1rem; /* Changed from right: 1rem */
-    z-index: 999;
-    color: #003366;
-  }
-}
-
-/* Modify or remove the media query that hides the menu button */
-@media screen and (min-width: 768px) {
-  .menu-icon {
-    display: block; /* Change from 'none' to 'block' to keep it visible */
-  }
-  
-  .nav-menu {
-    /* Keep your existing nav-menu styles for larger screens */
-  }
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
+  color: #003366;
 }
 
 /* Hero Section */
@@ -237,7 +227,7 @@ header {
   text-align: center;
 }
 
-.stat-card h3 {
+.stat_card h3 {
   font-size: 2.5rem;
   color: #ff6b35;
   margin-bottom: 0.5rem;
@@ -256,7 +246,7 @@ header {
 
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid_template-columns: 1fr 2fr;
   gap: 2rem;
   margin-top: 2rem;
 }
