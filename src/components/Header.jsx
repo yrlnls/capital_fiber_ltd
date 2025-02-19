@@ -9,10 +9,13 @@ const Header = () => {
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
+    // Prevent scrolling when menu is open
+    document.body.style.overflow = dropdownVisible ? 'auto' : 'hidden';
   };
 
   const closeDropdown = () => {
     setDropdownVisible(false);
+    document.body.style.overflow = 'auto';
   };
 
   const handleClickOutside = (event) => {
@@ -22,13 +25,23 @@ const Header = () => {
   };
 
   useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === 'Escape') {
+        closeDropdown();
+      }
+    };
+
     if (dropdownVisible) {
       document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('keydown', handleEscape);
     } else {
       document.removeEventListener('mousedown', handleClickOutside);
     }
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscape);
+      document.body.style.overflow = 'auto';
     };
   }, [dropdownVisible]);
 
@@ -46,26 +59,24 @@ const Header = () => {
         </div>
       </div>
       <nav>
-        <ul>
-          <li className="mobile-menu-icon" onClick={toggleDropdown}>
-            <FontAwesomeIcon icon={faBars} size="lg" />
-          </li>
-          {dropdownVisible && (
-            <ul className="dropdown" ref={dropdownRef}>
-              <li className="close-button" onClick={closeDropdown}>
-                <FontAwesomeIcon icon={faTimes} size="lg" />
-              </li>
-              <li className="dropdown-logo">
-                <img src="/CapitalLogo1.jpeg" alt="Capital Logo" />
-              </li>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/packages">Packages</a></li>
-              <li><a href="/security">Security</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          )}
-        </ul>
+        <div className="mobile-menu-icon" onClick={toggleDropdown}>
+          <FontAwesomeIcon icon={faBars} size="lg" />
+        </div>
+        <div className={`dropdown ${dropdownVisible ? 'visible' : ''}`} ref={dropdownRef}>
+          <button className="close-button" onClick={closeDropdown}>
+            <FontAwesomeIcon icon={faTimes} />
+          </button>
+          <div className="dropdown-logo">
+            <img src="/CapitalLogo1.jpeg" alt="Capital Logo" />
+          </div>
+          <ul>
+            <li><a href="/" onClick={closeDropdown}>Home</a></li>
+            <li><a href="/about" onClick={closeDropdown}>About</a></li>
+            <li><a href="/packages" onClick={closeDropdown}>Packages</a></li>
+            <li><a href="/security" onClick={closeDropdown}>Security</a></li>
+            <li><a href="/contact" onClick={closeDropdown}>Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
   );
