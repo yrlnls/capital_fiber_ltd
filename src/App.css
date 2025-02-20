@@ -6,7 +6,7 @@ body {
 
 /* Header Styles */
 header {
-  background: white;
+  background: #FFDB58;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
 }
@@ -26,7 +26,8 @@ header {
 
 .company-name {
   font-size: 1.5rem;
-  color: #003366;
+  color: #000000;
+  font-weight: bold;
 }
 
 .contact-info {
