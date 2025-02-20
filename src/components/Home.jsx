@@ -6,7 +6,7 @@ function Home() {
   return (
     <div id="home">
       <div className="hero-section" style={{ 
-        backgroundImage: "url('/pexels-scottwebb-430208.jpg')"
+        backgroundImage: "url('/background.jpg')"
       }}>
         <div className="hero-content">
           <img src="/CapitalLogo1.jpeg" alt="Capital Fiber Solutions Logo" className="logo img-fluid" />

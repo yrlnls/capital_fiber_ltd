@@ -10,7 +10,7 @@ function Packages() {
       price: 'kshs 1500/month', 
       icon: 'fa fa-signal',
       features: ['Ideal for browsing', 'Email & social media', 'Up to 3 devices'],
-      image: '/pexels-pixabay-373543.jpg',
+      image: '/browsing.jpg',
       bestValue: false
     },
     { 
@@ -19,7 +19,7 @@ function Packages() {
       price: 'kshs 2000/month', 
       icon: 'fa fa-signal',
       features: ['Great for streaming', 'Online gaming', 'Up to 5 devices'],
-      image: '/pexels-jimbear-3159622.jpg',
+      image: '/fiber5.jpg',
       bestValue: true
     },
     { 
@@ -28,7 +28,7 @@ function Packages() {
       price: 'kshs 3000/month', 
       icon: 'fa fa-signal',
       features: ['4K streaming', 'Large households', 'Up to 10 devices'],
-      image: '/pexels-pixabay-207574.jpg',
+      image: '/4kstreaming.jpg',
       bestValue: false
     },
     { 
@@ -37,7 +37,7 @@ function Packages() {
       price: 'kshs 2500', 
       icon: 'fa fa-router',
       features: ['High-performance', 'Dual-band WiFi', 'Easy setup'],
-      image: '/pexels-scottwebb-430208.jpg',
+      image: '/router.jpg',
       bestValue: false
     },
   ];

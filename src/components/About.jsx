@@ -8,19 +8,19 @@ function About() {
       icon: 'fa fa-star',
       title: 'Fibre Internet',
       description: 'Fast and reliable internet services tailored to your needs.',
-      image: '/pexels-pixabay-373543.jpg'
+      image: '/fiber3.jpg'
     },
     {
       icon: 'fa fa-camera',
       title: 'CCTV Installations',
       description: 'Advanced security systems to protect your property.',
-      image: '/pexels-jimbear-3159622.jpg'
+      image: '/cctv1.jpg'
     },
     {
       icon: 'fa fa-shield',
       title: 'Electric Fencing',
       description: 'Reliable solutions for securing your premises.',
-      image: '/pexels-pixabay-207574.jpg'
+      image: '/elecfence2.jpeg'
     },
   ];
 
@@ -31,7 +31,7 @@ function About() {
         
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', marginBottom: '60px' }}>
           <div>
-            <img src="/pexels-geekymegt-11261834.jpg" alt="Our Team" style={{ width: '100%', borderRadius: '10px' }} />
+            <img src="/elecfence3.jpg" alt="About Us" style={{ width: '100%', borderRadius: '10px' }} />
           </div>
           <div>
             <h3 style={{ color: '#003366', marginBottom: '20px' }}>Our Story</h3>
