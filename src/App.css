@@ -1,12 +1,42 @@
+:root {
+  /* Primary Colors */
+  --primary: #003366;
+  --primary-light: #004080;
+  --primary-dark: #00264d;
+
+  /* Secondary Colors */
+  --secondary: #FFDB58;
+  --secondary-light: #ffe47a;
+  --secondary-dark: #ffd236;
+
+  /* Accent Colors */
+  --accent: #ff6b35;
+  --accent-light: #ff8a5c;
+  --accent-dark: #e65a2e;
+
+  /* Neutral Colors */
+  --background: #ffffff;
+  --text: #000000;
+  --text-inverse: #ffffff;
+  --border: #e0e0e0;
+
+  /* Semantic Colors */
+  --success: #28a745;
+  --warning: #ffc107;
+  --error: #dc3545;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 /* Header Styles */
 header {
-  background: #FFDB58;
+  background: var(--secondary);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
 }
@@ -26,7 +56,7 @@ header {
 
 .company-name {
   font-size: 1.5rem;
-  color: #000000;
+  color: var(--text);
   font-weight: bold;
 }
 
@@ -36,7 +66,7 @@ header {
 }
 
 .phone-number {
-  color: #003366;
+  color: var(--primary);
   text-decoration: none;
   font-weight: 500;
 }
@@ -49,7 +79,7 @@ header {
   width: 100%;
   max-width: 400px;
   height: 100vh;
-  background: white;
+  background: var(--background);
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   transition: left 0.3s ease;
   z-index: 1000;
@@ -73,7 +103,7 @@ header {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #003366;
+  color: var(--primary);
   cursor: pointer;
   padding: 0.5rem;
 }
@@ -101,15 +131,15 @@ header {
 .dropdown a {
   display: block;
   padding: 1rem 2rem;
-  color: #003366;
+  color: var(--primary);
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 1.1rem;
 }
 
 .dropdown a:hover {
-  background-color: #f8f9fa;
-  color: #ff6b35;
+  background-color: var(--border);
+  color: var(--accent);
   padding-left: 2.5rem;
 }
 
@@ -121,7 +151,7 @@ header {
   top: 1rem;
   left: 1rem;
   z-index: 999;
-  color: #003366;
+  color: var(--primary);
 }
 
 /* Hero Section */
@@ -144,7 +174,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 51, 102, 0.7);
+  background: rgba(var(--primary), 0.7);
 }
 
 .hero-content {
@@ -172,8 +202,8 @@ header {
 .cta-button {
   display: inline-block;
   padding: 1rem 2rem;
-  background-color: #ff6b35;
-  color: white;
+  background-color: var(--accent);
+  color: var(--text-inverse);
   text-decoration: none;
   border-radius: 5px;
   font-weight: 600;
@@ -181,7 +211,7 @@ header {
 }
 
 .cta-button:hover {
-  background-color: #e65a2e;
+  background-color: var(--accent-dark);
 }
 
 /* Benefits Section */
@@ -208,14 +238,14 @@ header {
 
 .benefit-card i {
   font-size: 2.5rem;
-  color: #ff6b35;
+  color: var(--accent);
   margin-bottom: 1rem;
 }
 
 /* Stats Section */
 .stats-section {
-  background: #003366;
-  color: white;
+  background: var(--primary);
+  color: var(--text-inverse);
   padding: 4rem 2rem;
 }
 
@@ -230,14 +260,14 @@ header {
 
 .stat_card h3 {
   font-size: 2.5rem;
-  color: #ff6b35;
+  color: var(--accent);
   margin-bottom: 0.5rem;
 }
 
 /* Contact Section */
 .contact-section {
   padding: 4rem 2rem;
-  background: #f8f9fa;
+  background: var(--border);
 }
 
 .contact-container {
@@ -247,7 +277,7 @@ header {
 
 .contact-content {
   display: grid;
-  grid_template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -270,8 +300,8 @@ header {
 }
 
 .submit-button {
-  background-color: #ff6b35;
-  color: white;
+  background-color: var(--accent);
+  color: var(--text-inverse);
   padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
