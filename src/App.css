@@ -5,9 +5,9 @@
   --primary-dark: #00264d;
 
   /* Secondary Colors - Changed from yellow to a modern teal */
-  --secondary: #20B2AA;
-  --secondary-light: #48D1CC;
-  --secondary-dark: #008B8B;
+  --secondary: #FFD700;
+  --secondary-light: #FFD700;
+  --secondary-dark: #b8860b;
 
   /* Accent Colors */
   --accent: #ff6b35;
