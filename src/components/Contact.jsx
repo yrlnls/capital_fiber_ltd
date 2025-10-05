@@ -103,6 +103,22 @@ const Contact = () => {
             </motion.div>
           </motion.div>
 
+          <motion.div
+            className="map-container"
+            variants={itemVariants}
+          >
+            <h3>Visit Us</h3>
+            <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8163198761954!2d36.82443807590177!3d-1.284115598703665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11e849a53eb7%3A0x235009a1613022f4!2sGaberone%20plaza!5e0!3m2!1sen!2ske!4v1759628029476!5m2!1sen!2ske" 
+             width={600}
+             height={450}
+             style={{border:0}}
+             allowFullscreen="" 
+             loading="lazy" 
+             referrerPolicy="no-referrer-when-downgrade">
+             </iframe>
+          </motion.div>
+
           <motion.div 
             className="contact-form"
             variants={itemVariants}

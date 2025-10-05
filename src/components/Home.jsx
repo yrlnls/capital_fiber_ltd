@@ -188,7 +188,7 @@ function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2, type: "spring", stiffness: 100 }}
             >
-              10,000+
+              1,000+
             </motion.h3>
             <p>Happy Customers</p>
           </motion.div>
