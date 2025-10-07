@@ -36,7 +36,7 @@ function Footer() {
     },
     {
       icon: faEnvelope,
-      text: 'Email: info@capitalfibersolution.com',
+      text: 'Email: info@capitalfibersolution.com | support@capitalfibersolution.com' ,
       href: 'mailto:info@capitalfibersolution.com'
     },
     {

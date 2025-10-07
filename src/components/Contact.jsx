@@ -92,7 +92,7 @@ const Contact = () => {
                 whileHover={{ color: '#ff6b35' }}
                 transition={{ duration: 0.3 }}
               >
-                Email: info@capitalfibersolution.com
+                Email: info@capitalfibersolution.com | support@capitalfibersolution.com
               </motion.p>
               <motion.p
                 whileHover={{ color: '#ff6b35' }}
