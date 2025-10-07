@@ -31,13 +31,13 @@ function Footer() {
   const contactItems = [
     {
       icon: faPhone,
-      text: 'Contact Us: 0717 568 830 | 0769 289 503',
-      href: 'tel:0717568830'
+      text: 'Contact Us: +254 714 001 616 | +254 112 274 074' ,
+      href: 'tel:+254714001616'
     },
     {
       icon: faEnvelope,
-      text: 'Email: info@citynetfiber.com',
-      href: 'mailto:info@citynetfiber.com'
+      text: 'Email: info@capitalfibersolution.com',
+      href: 'mailto:info@capitalfibersolution.com'
     },
     {
       icon: faMapMarkerAlt,
@@ -62,7 +62,7 @@ function Footer() {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        CityNet Fiber Solutions brings you world-class fiber-optic internet technology. Work, play, and live at lightning speed.
+        Capital Fiber Solutions brings you world-class fiber-optic internet technology. Work, play, and live at lightning speed.
       </motion.p>
       
       <motion.div 

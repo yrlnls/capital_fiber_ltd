@@ -92,13 +92,13 @@ const Contact = () => {
                 whileHover={{ color: '#ff6b35' }}
                 transition={{ duration: 0.3 }}
               >
-                Email: netsmartsolutions@gmail.com
+                Email: info@capitalfibersolution.com
               </motion.p>
               <motion.p
                 whileHover={{ color: '#ff6b35' }}
                 transition={{ duration: 0.3 }}
               >
-                Phone: +254714001616/0112274074
+                Phone: +254 714 001 616/+254 112 274 074
               </motion.p>
             </motion.div>
           </motion.div>
