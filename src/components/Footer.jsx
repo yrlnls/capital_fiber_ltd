@@ -113,8 +113,7 @@ function Footer() {
         transition={{ duration: 0.6, delay: 0.6 }}
       >
         <p style={{ margin: 0, fontSize: '0.9rem' }}>
-          © 2025 Capital Fiber Solution. All rights reserved.
-        </p>
+          &copy; {new Date().getFullYear()} Capital Fiber Solutions. All rights reserved.       </p>
       </motion.div>
     </motion.footer>
   );
